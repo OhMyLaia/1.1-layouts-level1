@@ -1,0 +1,85 @@
+/* <header class="black-header">
+<div class="grey-container">
+    <span class="red-logo">logo</span>
+    <nav class="red-nav">nav</nav>
+    <span class="red-social">social</span>
+</div>
+
+<div class="orange-container">
+    <div class="yellow-banner">banner</div>
+</div>
+</header> */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    overflow-x: hidden; /* Evita desbordamiento horizontal */
+}
+
+.black-header {
+    display: flex;
+    box-sizing: border-box;
+    background-color: black;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+    flex-wrap: wrap;
+    gap: 1em;
+
+
+}
+
+.grey-container {
+    display: flex;
+    box-sizing: border-box;
+    background-color: grey;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+    gap: 1em;
+    
+}
+
+.red-logo {
+    flex-grow: 1;
+    background-color: red;
+    padding: 0.5em;
+}
+
+.red-nav {
+    flex-grow: 2;
+    background-color: red;
+padding: 0.5em;
+}
+
+.red-social {
+    flex-grow: 1;
+    background-color: red;
+    padding: 0.5em;
+}
+
+.orange-container {
+    display: flex;
+    box-sizing: border-box;
+    background-color: orange;
+    justify-content: center;
+    padding: 1em;
+    width: 100%;
+
+}
+
+.yellow-banner {
+    display: flex;
+    box-sizing: border-box;
+    background-color: yellow;
+    justify-content: center;
+    padding: 1em;
+    width: 100%;
+
+}
+
