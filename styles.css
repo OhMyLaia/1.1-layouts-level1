@@ -1,14 +1,4 @@
-/* <header class="black-header">
-<div class="grey-container">
-    <span class="red-logo">logo</span>
-    <nav class="red-nav">nav</nav>
-    <span class="red-social">social</span>
-</div>
 
-<div class="orange-container">
-    <div class="yellow-banner">banner</div>
-</div>
-</header> */
 
 * {
     margin: 0;
@@ -17,69 +7,171 @@
 }
 
 header {
-    overflow-x: hidden; /* Evita desbordamiento horizontal */
+    overflow-x: hidden;
 }
 
-.black-header {
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* global container - needed (?) */
+.global-container {
+    /* display: flex; */
+    flex-wrap: wrap;
+    align-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    gap: 1em;
+}
+
+/* ALL black containers */
+.black-container {
     display: flex;
     box-sizing: border-box;
     background-color: black;
-    justify-content: space-evenly;
-    align-items: center;
     padding: 1em;
-    flex-wrap: wrap;
+    margin: 1em;
     gap: 1em;
-
-
 }
 
-.grey-container {
+/* FIRST black container */
+#black-container-1 {
+    flex-direction: column;
+}
+
+ /* SECOND black container (grey and pink children)  */
+#black-container-2 {
+    /* grid-template-columns: 1fr 300px; */
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    gap: 1em;
+}
+
+
+.grey-container-header {
     display: flex;
     box-sizing: border-box;
     background-color: grey;
-    justify-content: space-evenly;
-    align-items: center;
     padding: 1em;
-    width: 100%;
     gap: 1em;
-    
+    flex-flow: nowrap;
+    justify-content: space-evenly;
 }
 
-.red-logo {
-    flex-grow: 1;
-    background-color: red;
-    padding: 0.5em;
-}
 
-.red-nav {
-    flex-grow: 2;
-    background-color: red;
-padding: 0.5em;
-}
-
+ /* logo & rrss commons  */
+.red-logo,
 .red-social {
     flex-grow: 1;
     background-color: red;
     padding: 0.5em;
 }
 
+ /* first navigation bar  */
+#red-nav {
+    flex-grow: 3;
+    background-color: red;
+    padding: 0.5em;
+}
+
+ /* orange container  */
 .orange-container {
     display: flex;
     box-sizing: border-box;
     background-color: orange;
     justify-content: center;
     padding: 1em;
+    gap: 0.5em;
     width: 100%;
 
 }
 
+ /* yellow container  */
 .yellow-banner {
     display: flex;
     box-sizing: border-box;
     background-color: yellow;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 1em;
     width: 100%;
 
 }
 
+
+
+/* SECOND grey container with grid  */
+/* .article-grid {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    box-sizing: border-box;
+    background-color: grey;
+    padding: 1em;
+    gap: 1em;
+    width: 70px;
+} */
+
+
+.grey-container-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;;
+    box-sizing: border-box;
+    background-color: grey;
+    padding: 1em;
+    gap: 1em;
+    flex-flow: nowrap;
+    justify-content: space-evenly;
+    width: 75%
+}
+
+ /* blue article elements  */
+.blue-article {
+    background-color: blue;
+    color: white;
+    padding: 0.5em;
+
+}
+
+ /* light blue navigation bar  */
+#blue-nav {
+    background-color: aqua;
+    grid-column: 1 / -1;
+    padding: 0.5em;
+    width: 100%;
+} 
+
+ /* pink container publi children  */
+.pink-container {
+    display: flex;
+    flex-direction: column; /* Disposición vertical */
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    background-color: crimson;
+    padding: 1em;
+    gap: 2em;
+    width: 10em;
+}
+
+/* mirar contenedor negro y gris, si funciona el width del rosa, porque? */
+
+ /* yellow publi elements  */
+.yellow-publi {
+    flex: 1;
+    background-color: yellow;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+.pink-space {
+    flex: 1;
+    background-color: crimson;
+    box-sizing: border-box;
+    padding: 2em;
+}
