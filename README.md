@@ -2,13 +2,11 @@
 📄 Description
   Creating a layout with flexbox
 
-
 💻 Tech
   Html
   CSS
 
-
-📋Requirements
+📋 Requirements
 
 1. Supported Browsers:
    - Google Chrome (v.91+)
@@ -23,16 +21,7 @@
 3. Project Structure:
    - index.html (HTML file)
    - style.css (custom CSS file)
-
-4. Bootstrap:
-   - Version: Bootstrap v5.3+.
   
-
-5. Dependencies:
-   - Node.js (v16.0+): Required for npm installations and optional Sass preprocessor.
-   - npm (v8.0+): Required for managing dependencies.
-
-
 🛠️ Install
 
 Clone this repo -> git clone https://github.com/OhMyLaia/1.1-layouts-level1
@@ -42,14 +31,8 @@ Install dependencies -> /no dependencies yet/
 
 ▶️ Execution:
 1. Navigate to the project directory: `cd 3.1-Bases-de-Dades`.
-2. Start the project: `npm start` or `npm run dev`.
-3. Open your browser with a live server.
+2. Open your browser with a live server.
 
-
-🌐 Deployment:
-1. Build the project: `npm run build`.
-2. Deploy the `dist/` folder to a hosting provider like Netlify, Vercel, or GitHub Pages.
-3. Verify the deployment by visiting the provided URL.
 
 🤝 Contributions:
 1. Fork the repository and clone it locally.
